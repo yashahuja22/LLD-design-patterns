@@ -1,0 +1,24 @@
+When to use the Prototype Design Pattern
+
+--Below is when to use prototype design pattern:
+
+    Use the Prototype pattern when creating new objects is more complex or costly than  copying existing ones. Cloning can be more efficient if significant resources are needed.
+    
+    The Prototype pattern is helpful for managing various objects with minor differences. Instead of creating multiple classes, you can clone and modify prototypes.
+    
+    Consider the Prototype pattern for dynamic configurations where you need to create objects at runtime. You can clone a base configuration and adjust it as necessary.
+    
+    The Prototype pattern can lower initialization costs, as cloning is often faster than building a new object from scratch, especially if initialization is resource-intensive.
+
+
+When not to use the Prototype Design Pattern 
+
+--Below is when not to use Prototype design pattern:
+
+    Avoid using the Prototype pattern when your application predominantly deals with unique object instances, and the overhead of implementing the pattern outweighs its benefits.
+
+    If object creation is simple and does not involve significant resource consumption, and there are no variations of objects, using the Prototype pattern might be unnecessary complexity.
+
+    If your objects are immutable (unchangeable) and do not need variations, the benefits of cloning may not be significant.
+    
+    If your system has a clear and straightforward object creation process that is easy to understand and manage, introducing the Prototype pattern may add unnecessary complexity.

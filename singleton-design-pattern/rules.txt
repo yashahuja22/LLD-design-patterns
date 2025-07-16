@@ -1,0 +1,21 @@
+Rules:
+•	Static methods belong to the class itself, not to any particular object.
+
+•	Since the only way to get an instance of the singleton is through getInstance(), and that’s static, you call it using the class name, like:
+
+Logger* logger = new Logger();       // ❌ Constructor is private — compiler error
+logger->getInstance();               // ❌ Static method, cannot call via instance
+
+
+Logger* logger = Logger::getInstance();  // ✅ Correct way to call static method
+
+---Use Cases for the Singleton Design Pattern
+Below are some common situations where the Singleton Design Pattern is useful:
+
+•	In applications where creating and managing database connections is resource-heavy, using a Singleton ensures that there’s just one connection maintained throughout the application.
+
+•	When global settings need to be accessed by different parts of the application, a Singleton configuration manager provides a single point of access for these settings.
+
+•	Singleton helps to centralize control and making it easier to manage the state and actions of user interface components.
+
+•	Singleton can effectively organize print jobs and streamlines the process in the systems where document printing is required.

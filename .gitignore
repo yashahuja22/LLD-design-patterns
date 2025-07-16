@@ -1,0 +1,20 @@
+# Ignore all .exe files in all folders
+*.exe
+
+# Ignore common C++ build outputs
+*.o
+*.out
+*.obj
+*.a
+*.so
+*.dll
+*.class
+
+# Ignore binaries with no extension
+main
+a.out
+**/main
+**/a.out
+
+# VS Code settings (if using)
+.vscode/
